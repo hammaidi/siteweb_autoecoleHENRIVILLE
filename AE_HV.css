@@ -1,0 +1,595 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+html{
+
+    scroll-behavior:smooth ;
+    font-family: Poppins, 'sans serif';
+    
+}
+
+/*Balise Header*/
+
+header{
+
+    background-color: rgb(249, 249, 249);
+
+}
+
+nav{
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav .nav_links a{
+    font-size: 25px;
+    margin: 0px 25px;
+    
+}
+
+nav .nav_links {
+    
+    align-items: center;
+    
+}
+
+nav .nav_links .active{
+    font-size: 28px;
+    color: red;
+}
+
+.btn_hamburger{
+
+    width:50px ;
+    display: none;
+}
+/*Fin Balise Header*/
+
+
+
+
+
+/* début Balise Main*/
+
+main{
+
+    background-color: rgb(249, 249, 249);
+}
+
+ 
+.presentation img{
+
+    height: 700px;
+    width: 98vw;
+
+
+}
+
+.presentation_ecriture{
+
+    position: absolute;
+    width:98vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    
+}
+
+.presentation_ecriture a:hover{
+    background-color: #ffffff31;
+    color: #005fa0;
+    transition: all 700ms;
+}
+
+.presentation h2 {
+    
+    color: #fff;
+    font-size: 4em;
+    padding: 30px;
+    background-color: rgba(0, 128, 0, 0.037);
+    
+    
+}
+
+.presentation a {
+    
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15vw;
+    padding: 30px;
+    font-size: 2em;
+    background-color: #0060a07f;
+}
+
+
+
+/* FORMATION */
+
+
+
+
+
+.formation{
+   
+    display: flex;
+    padding: 30px;
+    color: #005fa0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.formation img{
+
+    top: 0;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.formation a {
+
+    text-decoration: none;
+}
+
+
+.formation .formation_permisBM{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+   margin-left: 10vw;
+   width: auto;
+   
+    border-radius: 22px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    
+    
+}
+
+
+
+.formation .formation_permisBM  h3{
+    
+    margin: 10px 0px;
+    color: rgba(37, 37, 37, 0.744);
+    
+    
+    
+}
+
+
+.formation .formation_permisauto{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-right: 10vw;
+    border-radius: 22px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    width: auto; /*dans le responsive ca me permet de reduire le width en meme temps que je retrcit les pixels*/
+    
+    
+    
+}
+
+
+
+
+
+
+.formation .formation_permisauto  h3{
+    
+    margin: 10px 0px;
+    color: rgba(37, 37, 37, 0.744);
+    
+}
+
+.formation2{
+    
+    display: flex;
+    padding: 30px;
+    color: #005fa0;
+    justify-content: center;
+}
+
+
+
+
+.formation2 .formation_code{
+    
+    
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    width: 60vw;
+    
+    text-align: center;
+    
+}
+
+.formation2 .formation_code img{
+
+    top: 0;
+    width: 100px;
+    height: 100px;
+  
+    
+}
+
+.formation2 .formation_code  h3{
+
+    color: rgba(37, 37, 37, 0.744);
+    text-align: center;
+
+}
+
+.formation2 .formation_code  li, .formation_permisBM li, .formation_permisauto li{
+
+    list-style: none;
+    margin: 10px 0px;
+
+}
+
+
+
+
+
+
+
+/*FIN FORMATION*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Contact{
+
+    background-color: #fff;
+    color: #005fa0;
+}
+
+.coordonées{
+    margin-top: 3cm;
+    margin-left: 30px;
+}
+
+.Phrase_formulaire{
+    margin-top: 3cm;
+    text-align: center;
+}
+
+.formulaire{
+    /*le flex-direction  column permet de placer des élémentsen colonne  */ 
+
+    color: #005fa0;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+    /*le flex wrap wrap permet normalent de rendre le site responsive lorsque lecran se rétrécit(tel,tablette) alors les elements deviennent en display block*/
+    flex-wrap: wrap;
+    /*justify-content: space-evenly; */  
+   
+}
+
+.Formulaire1et2{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Formulaire_1_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3cm;
+}
+
+.Formulaire_1_1 input{
+    
+    
+    padding: 15px;
+    font-family: 'DM Sans';
+    margin-top: 10px;
+    width: 200px;
+    
+   
+}
+
+.Formulaire_1_2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3cm;
+
+
+}
+
+.Formulaire_1_2 input{
+    
+    
+    padding: 15px;
+    font-family: 'DM Sans';
+    margin-top: 10px;
+    width: 200px;
+    
+   
+}
+
+
+
+
+.Formulaire_box{
+   
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+input[type="submit"]{
+
+    text-align: center;
+    margin-top: 1cm;
+    margin-left: 46%;
+    font-family: 'DM Sans';
+    color: #005fa0;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    width: 125px;
+    border-radius: 3%;
+    border: 1px solid #005fa0;
+
+
+}
+
+.Formulaire_box{
+    width: 100%;
+    justify-content: center;
+}
+
+input[type="submit"]:hover{
+    
+    background-color:#005fa0;
+    color: #fff;
+    transition: all 700ms;
+   
+}
+
+
+
+
+
+
+
+
+
+/*PARTIT RESPONSIVE*/
+
+@media(max-width:1174px){
+
+
+    .formation{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .formation .formation_permisBM{
+        
+        margin: 0;
+    }
+
+    .formation .formation_permisauto{
+
+        margin: 0;
+    }
+}
+
+
+
+
+
+@media(max-width:912px){
+
+    .btn_hamburger{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width:50px ;
+        
+    }
+
+    .nav_links{
+
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        height: 200px;
+        width: 50vw;
+        right: 0;
+        top: 2vh;
+        backdrop-filter:blue(17px) ; /*met flou le back ground*/
+        background-color: rgba(255, 255, 255, 0.402);
+        margin-right: -200%;
+        transition: all 700ms;
+        
+    }
+
+    .nav_links a{
+        color: #005fa0;
+        padding: 15px;
+    }
+    
+    nav .nav_links .active{
+        color: red;
+    }
+
+    .mobile_menu{
+
+        margin-right:  0;
+    }
+
+    
+
+    .formation img{
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .formation2 img{
+        width: 50px;
+        height: 50px;
+
+        
+    }
+
+    .formation_permisBM, .formation_permisauto, .formation_code{
+
+        
+        width: 60vh;
+    }
+
+    
+
+   
+}
+
+
+
+
+
+@media (max-width:507px){
+    
+        
+
+        .presentation .presentation_ecriture{
+            position: absolute;
+            
+            width:98vw ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 100px;
+        }
+
+        
+
+        .presentation a {
+            text-decoration: none;
+            color: #fff;
+           
+            padding: 15px;
+            font-size: 25px;
+            background-color: #0060a07f;
+        }
+
+
+        .presentation h2 {
+    
+            color: #fff;
+            font-size: 4em;
+            padding: 20px;
+            background-color: rgba(0, 128, 0, 0.11);
+            
+            
+        }
+
+       
+
+        .formation .formation_permisBM, .formation_permisauto{
+            margin: 0;
+
+        }
+        
+       
+
+       
+
+        .formation_permisauto{
+
+            margin-top: 60px;
+        }
+
+        .presentation img{
+
+            height: 600px;
+            width: 98vw;
+        
+        
+        }
+      
+        
+
+      
+        
+        
+
+
+    }
+
+
+
+
+
+
+
+
