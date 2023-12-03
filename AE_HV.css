@@ -44,6 +44,12 @@ nav .nav_links a{
     
 }
 
+nav .nav_links a:hover{
+    
+   color: lightblue;
+   transition: all 700ms;
+}
+
 nav .nav_links {
     
     align-items: center;
@@ -54,6 +60,8 @@ nav .nav_links .active{
     font-size: 28px;
     color: red;
 }
+
+
 
 .btn_hamburger{
 
@@ -66,7 +74,7 @@ nav .nav_links .active{
 
 
 
-/* début Balise Main*/
+/* début PRESENTATION*/
 
 main{
 
@@ -101,10 +109,11 @@ main{
 
 .presentation h2 {
     
-    color: #fff;
+    color: white;
     font-size: 4em;
     padding: 30px;
-    background-color: rgba(0, 128, 0, 0.037);
+    background-color: rgba(0, 128, 0, 0.096);
+    border-radius: 22px;
     
     
 }
@@ -257,35 +266,47 @@ main{
 }
 
 
-
-
-
-
-
 /*FIN FORMATION*/
 
 
 
+/* DEBUT BIOGRAPHIE */
+
+.biographie_company{
+
+    background-color: #1970aa;
+    color: #fff;
+}
+
+.title_biographie{
+
+    padding: 40px;
+    justify-content: center;
+    font-size: 3em;
+    margin: 20px 30vw;
+    width: auto;
+    padding: 40px;
+    font-size: 2em;
+
+}
+
+.biographie_company h3{
+    margin-bottom: 15px;
+    font-size: 2em;
+   
+}
 
 
+.biographie_company section{
+
+    padding: 5vw;
+}
 
 
+/*FIN Biographie*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Début Contact*/
 
 .Contact{
 
@@ -293,13 +314,25 @@ main{
     color: #005fa0;
 }
 
+.Contact h1{
+
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
 .coordonées{
-    margin-top: 3cm;
-    margin-left: 30px;
+    padding: 50px;
+    margin-left: 15vh;
+    width: auto;
+
+
+
 }
 
 .Phrase_formulaire{
-    margin-top: 3cm;
+    margin-top: 1cm;
     text-align: center;
 }
 
@@ -308,17 +341,16 @@ main{
 
     color: #005fa0;
     margin-top: 3cm;
-    margin-bottom: 1cm;
+    
     /*le flex wrap wrap permet normalent de rendre le site responsive lorsque lecran se rétrécit(tel,tablette) alors les elements deviennent en display block*/
     flex-wrap: wrap;
-    /*justify-content: space-evenly; */  
    
 }
 
 .Formulaire1et2{
 
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .Formulaire_1_1{
@@ -383,7 +415,7 @@ input[type="submit"]{
 
     text-align: center;
     margin-top: 1cm;
-    margin-left: 46%;
+   
     font-family: 'DM Sans';
     color: #005fa0;
     background-color: #fff;
@@ -439,6 +471,16 @@ input[type="submit"]:hover{
     .formation .formation_permisauto{
 
         margin: 0;
+    }
+
+    .title_biographie{
+
+        padding: 0px;
+        justify-content: center;
+        margin: 0px 20px ;
+        padding: 40px;
+        font-size: 2em;
+    
     }
 }
 
@@ -508,6 +550,14 @@ input[type="submit"]:hover{
         width: 60vh;
     }
 
+    .title_biographie h2{
+
+       font-size: 1em;
+        justify-content: start;
+       
+    
+    }
+
     
 
    
@@ -573,11 +623,21 @@ input[type="submit"]:hover{
 
             height: 600px;
             width: 98vw;
-        
-        
         }
       
-        
+        .Formulaire1et2{
+
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .coordonées{
+
+            margin: 5vh 5vh;
+            padding: 0;
+        }
+       
 
       
         
